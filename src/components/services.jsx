@@ -64,9 +64,9 @@ export default function Features(){
         <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12 sm:mb-16 lg:mb-20">
                 <h2 className="text-5xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
-                    <span className="bg-gradient-to-b from-[#2E8B3D] to-gray-300 bg-clip-text text-transparent" >Our Laboratory</span>
+                    <span className="bg-gradient-to-b from-[#2E8B3D] to-[#2E8B3D] bg-clip-text text-transparent" >Our Laboratory</span>
                     <br/>
-                <span className="bg-gradient-to-b from-green-400 to-cyan-300 bg-clip-text text-transparent" >
+                <span className="bg-gradient-to-b from-[#2E8B3D] to-[#2E8B3D] bg-clip-text text-transparent" >
                 Services</span>
                 </h2>
             </div>
@@ -89,7 +89,7 @@ export default function Features(){
                                     customStyle={{
                                         margin: 0,
                                         background: "transparent",
-                                        borderRadius: "8px",
+                                        
                                         fontSize: "0.75rem",
                                         lineHeight: "1.4",
                                     }}
