@@ -1,6 +1,6 @@
 import { Menu, X } from "lucide-react"
 import {useState} from "react";
-import viteLogo from "../assets/vite.svg";
+import dlab_logo from "../assets/dlab_logo.png";
 
 export default function Navbar(){
     const [mobileMenuIsOpen, setMobilemenuisOpen] = useState(false);
@@ -10,7 +10,7 @@ export default function Navbar(){
             <div className="flex justify-between items-center h-14 sm:h-16 md:h-20">
                 <div className="flex items-center space-x-1 group cursor-pointer">
                     <div>
-                        <img src={viteLogo} className="w-6 h-6 sm:w-8 sm:h-8" alt="CodeFlow" />
+                        <img src={dlab_logo} className="w-6 h-6 sm:w-8 sm:h-8" alt="CodeFlow" />
                     </div>
                     <span className="text-lg sm:text-xl md:text-2xl font-medium">
                         <span className="text-[#0B2E5C]">DLAB</span>
