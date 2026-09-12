@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
 import { ArrowRight, ChevronDown, Phone, Sparkles } from "lucide-react"
-// import SyntaxHighlighter from "react-syntax-highlighter"
-// import { nightOwl } from "react-syntax-highlighter/dist/esm/styles/prism"
-// import { codeExamples, floatingCards } from "../data/CodeExamples";
+import dlab_logo from "../assets/dlab_logo.png";
+import medImage from "../assets/med.jpg";
 
 
 import React from 'react'
@@ -72,7 +71,7 @@ const [mousePosition, setMousePosition] =  useState({x:0, y:0});
             <div className="relative bg-white/5 backdrop-blur-xl rounded-xl sm:rounded-2xl p-3 sm:p-4 shadow-2xl border border-white/10">
               <div className="bg-gradient-to-br from-gray-900/20 to-gray-800/20 backdrop-blur-sm rounded-lg overflow-hidden h-[280px] sm:h-[350px] lg:h-[450px] border border-white/5">
                 <img
-                  src="./src/assets/med.jpg"
+                  src={medImage}
                   alt="Medical equipment"
                   className="h-full w-full object-fit object-center block"
                 />
