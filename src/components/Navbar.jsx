@@ -1,19 +1,20 @@
 import { Menu, X } from "lucide-react"
 import {useState} from "react";
+import viteLogo from "../assets/vite.svg";
 
 export default function Navbar(){
     const [mobileMenuIsOpen, setMobilemenuisOpen] = useState(false);
 
-    return <nav className="fixed top-0 w-full z-50 transition-all duration-300 bg-[#0B2E5C] backdrop-blur-sm">
+    return <nav className="fixed top-0 w-full z-50 transition-all duration-300 bg-transparent backdrop-blur-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center h-14 sm:h-16 md:h-20">
                 <div className="flex items-center space-x-1 group cursor-pointer">
                     <div>
-                        <img src="./src/assets/vite.svg" className="w-6 h-6 sm:w-8 sm:h-8" alt="CodeFlow" />
+                        <img src={viteLogo} className="w-6 h-6 sm:w-8 sm:h-8" alt="CodeFlow" />
                     </div>
                     <span className="text-lg sm:text-xl md:text-2xl font-medium">
-                        <span className="text-red">DLAB</span>
-                        <span className="text-green-400">MEDICARE</span>
+                        <span className="text-[#0B2E5C]">DLAB</span>
+                        <span className="text-green-700">MEDICARE</span>
                         <span className="block text-[10px] text-left leading-none text-gray-400">
                             Services limited
                         </span>
@@ -24,17 +25,17 @@ export default function Navbar(){
                 </div>
                     {/* Navbar */}
                 <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
-                    <a href="#features" className="text-gray-300 hover:text-white text-sm lg:text-base">
+                    <a href="#features" className="text-[#0B2E5C] hover:text-green-500 text-sm lg:text-base">
                         Services
                     </a>
-                    <a href="#pricing" className="text-gray-300 hover:text-white text-sm lg:text-base">
+                    <a href="#pricing" className="text-[#0B2E5C] hover:text-green-500 text-sm lg:text-base">
                         About
                     </a>
-                    <a href="#testimonials" className="text-gray-300 hover:text-white text-sm lg:text-base">
+                    <a href="#testimonials" className="text-[#0B2E5C] hover:text-green-500 text-sm lg:text-base">
                         Contact
                     </a>
                 </div>
-                <button className="md:hidden p-2 text-grsay-300 hover:text-white" 
+                <button className="md:hidden p-2 text-[#0B2E5C] hover:text-white" 
                 onClick={() => setMobilemenuisOpen((prev)=> !prev)} 
                 type="button"s aria-label="Open menu">
                     {mobileMenuIsOpen ?(<X/>):(

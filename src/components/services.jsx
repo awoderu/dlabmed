@@ -24,7 +24,7 @@ const features = [
     {
         title: "Clinical Chemistry",
         icon: FlaskConical,
-        description: "Accurate testing for blood sugar, cholesterol, liver and kidney function.",
+        description: "Accurate testing for blood sugar, \ncholesterol, liver and kidney function.",
         codeSnippet: "Blood glucose\\nLipid profile\\nLiver function",
         imagePosition: "right",
     },
@@ -76,7 +76,7 @@ export default function Features(){
                     <div key={feature.title} className="relative group w-full">
                         <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-xl sm:rounded-2xl transition-all duration-500" />
                         <div className="relative bg-gray-950 backdrop-blur-sm border border-gray-700/50 rounded-xl sm:rounded-2xl p-4 sm:p-6 overflow-hidden group-hover:border-blue-600/50 transition-all duration-300">
-                            <div className="bg-gray-950 rounded-lg p-3 sm:p-4 font-mono text-xs sm:text-sm">
+                            <div className="bg-gray-950 rounded-lg p-3 sm:p-4 font-mono text-xs sm:text-sm max-w-full overflow-hidden break-words">
                                 <div className="flex items-center space-x-1 sm:space-x-2 mb-3 sm:mb-4">
                                     <feature.icon className="w-5 h-5 text-green-400" />
                                     <span className="text-gray-400 ml-2 sm:ml-4 text-xs sm:text-sm">
@@ -89,10 +89,13 @@ export default function Features(){
                                     customStyle={{
                                         margin: 0,
                                         background: "transparent",
-                                        
                                         fontSize: "0.75rem",
                                         lineHeight: "1.4",
+                                        whiteSpace: "pre-wrap",
+                                        overflowX: "hidden",
+                                        wordBreak: "break-word",
                                     }}
+                                    wrapLongLines={true}
                                     wrapLines={true}
                                 >
                                     {feature.description}
