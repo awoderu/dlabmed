@@ -15,7 +15,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-[75vh] flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-16 sm:pt-20 pb-12 sm:pb-16">
+    <section className="relative min-h-[93vh] flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-16 sm:pt-20 pb-12 sm:pb-16">
       <div
         className="absolute inset-0 opacity-30"
         style={{
@@ -62,7 +62,7 @@ export default function Hero() {
                 <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-3 group-hover:translate-x-1 transition-transform duration-300" />
               </button>
 
-              <button className="group w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-white text-[#2E8B3D] backdrop-blur-sm border-4 border-green-500 shadow-[0_0_15px_rgba(34,197,94,0.6)] rounded-full font-semibold text-sm sm:text-base transition-all duration-300 hover:bg-blue-950 hover:text-white hover:scale-[1.02] flex items-center justify-center space-x-2">                  <Phone className="w-4 h-4 fill-white" />
+              <button className="group w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-blue-950 text-white backdrop-blur-sm border-4 border-green-500 shadow-[0_0_15px_rgba(34,197,94,0.6)] rounded-full font-semibold text-sm sm:text-base transition-all duration-300 hover:bg-white hover:text-black hover:scale-[1.02] flex items-center justify-center space-x-2">                  <Phone className="w-4 h-4 fill-white" />
                 <span>Call 08040586725</span>
               </button>
             </div>

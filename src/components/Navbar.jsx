@@ -25,7 +25,7 @@ export default function Navbar() {
               <img src={dlab_logo} className="w-6 h-6 sm:w-8 sm:h-8" alt="CodeFlow" />
             </div>
             <span className="text-lg sm:text-xl md:text-2xl font-medium">
-              <span className="text-[#0B2E5C]">DLAB</span>
+              <span className="text-[#0B2E5C] font-extrabold">DLAB</span>
               <span className="text-green-700">MEDICARE</span>
               <span className="block text-[10px] text-left leading-none text-gray-400">
                 Services limited
