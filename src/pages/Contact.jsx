@@ -153,6 +153,22 @@ export default function Contact() {
               </button>
             </form>
           </div>
+
+          <div className="w-full rounded-2xl overflow-hidden p-6 sm:p-8 bg-white/40 backdrop-blur-md border border-white/60 lg:col-span-2 shadow-[0_0_20px_rgba(0,0,0,0.15)]">
+            <div className="mb-4">
+              <h2 className="text-xl font-bold text-gray-800">DLAB Medicare Location</h2>
+              <p className="text-sm text-gray-600">SW9/4343 Alhaji Ibrahim Layout, Opposite New Garage, Owode Apata, Ibadan</p>
+            </div>
+            <div className="w-full h-72 sm:h-96 rounded-xl overflow-hidden border border-gray-200">
+              <iframe
+                title="DLAB Medicare Location Map"
+                className="w-full h-full border-0"
+                src="https://www.google.com/maps?q=Owode+Apata,+Ibadan,+Oyo+State&output=embed"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
         </div>
       </section>
     </div>
