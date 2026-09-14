@@ -15,7 +15,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-16 sm:pt-20 pb-8 sm:pb-12">
+    <section className="relative flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-16 sm:pt-20 xl:pt-60 pb-8 sm:pb-12">
       <div
         className="absolute inset-0 opacity-30"
         style={{
@@ -44,34 +44,34 @@ export default function Hero() {
 
             <h1 className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold mb-3 sm:mb-4 leading-tight">
               <span className="bg-gradient-to-b from-[#0B2E5C] to-[#0B2E5C] bg-clip-text text-transparent block mb-0.5 sm:mb-1 font-bold">LAB RESULTS</span>
-              <span className="bg-gradient-to-b from-[#2E8B3D] to-[#2E8B3D] bg-clip-text text-transparent block mb-0.5 sm:mb-1">PEOPLE CAN</span>
+              <span className="bg-gradient-to-b from-[#2E8B3D] to-[#2E8B3D] bg-clip-text text-transparent block mb-0.5 sm:mb-1">YOU CAN</span>
               <span className="bg-gradient-to-b from-[#2E8B3D] to-[#2E8B3D] bg-clip-text text-transparent block">TRUST</span>
             </h1>
 
             <p className="text-md sm:text-base lg:text-lg text-black max-w-2xl mx-auto lg:mx-0 mb-4 sm:mb-5 leading-relaxed">
               DLAB Medicare runs accurate, timely diagnostic testing across haematology, chemistry, microbiology and more
-              <code className="bg-gray-200 text-gray-800 rounded px-1 py-0.5">— read by clinicians, delivered to you.</code>
+              <code className="bg-gray-200 text-gray-800 rounded px-1 py-0.5"> — tested by clinicians, delivered to you.</code>
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4">
-              <button className="group w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-[#2E8B3D] text-white backdrop-blur-sm border-4 border-green-500 shadow-[0_0_15px_rgba(34,197,94,0.6)] rounded-full font-semibold text-sm sm:text-base transition-all duration-300 hover:bg-white hover:text-blue-950 hover:scale-[1.02] flex items-center justify-center space-x-2">
+              <button className="group w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-[#2E8B3D] text-white backdrop-blur-sm border-4 border-green-500 shadow-[0_0_15px_rgba(34,197,94,0.6)] rounded-full font-semibold text-sm sm:text-base transition-all duration-300 hover:bg-white hover:text-blue-950 hover:scale-[1.02] active:bg-white active:text-blue-950 active:scale-[1.02] focus-visible:scale-[1.02] flex items-center justify-center space-x-2">
                 <div className="flex items-center space-x-2">
                   <Calendar  className="w-4 h-4 sm:w-5 sm:h-5" />
                   <span>Book a test</span>
                 </div>
-                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-3 group-hover:translate-x-1 transition-transform duration-300" />
+                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-3 group-hover:translate-x-1 group-active:translate-x-1 transition-transform duration-300" />
               </button>
 
-              <button className="group w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-blue-950 text-white backdrop-blur-sm border-4 border-green-500 shadow-[0_0_15px_rgba(34,197,94,0.6)] rounded-full font-semibold text-sm sm:text-base transition-all duration-300 hover:bg-white hover:text-black hover:scale-[1.02] flex items-center justify-center space-x-2">                  <Phone className="w-4 h-4 fill-white" />
+              <button className="group w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-blue-950 text-white backdrop-blur-sm border-4 border-green-500 shadow-[0_0_15px_rgba(34,197,94,0.6)] rounded-full font-semibold text-sm sm:text-base transition-all duration-300 hover:bg-white hover:text-black hover:scale-[1.02] active:bg-white active:text-black active:scale-[1.02] focus-visible:scale-[1.02] flex items-center justify-center space-x-2">                  <Phone className="w-4 h-4 fill-white" />
                 <span>Call 08040586725</span>
               </button>
             </div>
           </div>
 
           <div className="relative w-full">
-            <div className="relative bg-[#0B2E5C]/5 backdrop-blur-xl rounded-xl sm:rounded-2xl p-3 sm:p-4 shadow-2xl border border-white/10">
-              <div className="bg-gradient-to-br from-gray-900/20 to-gray-800/20 backdrop-blur-sm rounded-lg overflow-hidden h-[280px] sm:h-[350px] lg:h-[450px] border border-white/5">
-                <img
+            <div className="flip-box-inner relative bg-[#0B2E5C]/5 backdrop-blur-xl rounded-xl sm:rounded-2xl p-3 sm:p-4 shadow-2xl border border-white/10">
+              <div className="flip-box-front bg-gradient-to-br from-gray-900/20 to-gray-800/20 backdrop-blur-sm rounded-lg overflow-hidden h-[280px] sm:h-[350px] lg:h-[450px] border border-white/5">
+                <img 
                   src={medImage}
                   alt="Medical equipment"
                   className="h-full w-full object-cover object-center block"

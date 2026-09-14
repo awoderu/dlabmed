@@ -1,4 +1,5 @@
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import dlab_logo from "../assets/dlab_logo.png";
 
@@ -20,7 +21,7 @@ export default function Navbar() {
     <nav className="fixed top-0 w-full z-50 transition-all duration-300 bg-transparent backdrop-blur-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-14 sm:h-16 md:h-20 relative">
-          <div className="flex items-center space-x-1 group cursor-pointer">
+          <Link to="/" className="flex items-center space-x-1 group cursor-pointer">
             <div>
               <img src={dlab_logo} className="w-6 h-6 sm:w-8 sm:h-8" alt="CodeFlow" />
             </div>
@@ -31,12 +32,12 @@ export default function Navbar() {
                 Services limited
               </span>
             </span>
-          </div>
+          </Link>
 
           <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
-            <a href="#features" className="text-[#0B2E5C] hover:text-green-500 text-sm lg:text-base">Services</a>
-            <a href="#pricing" className="text-[#0B2E5C] hover:text-green-500 text-sm lg:text-base">About</a>
-            <a href="#testimonials" className="text-[#0B2E5C] hover:text-green-500 text-sm lg:text-base">Contact</a>
+            <a href="/#features" className="text-[#0B2E5C] hover:text-green-500 text-sm lg:text-base">Services</a>
+            <a href="/About-us" className="text-[#0B2E5C] hover:text-green-500 text-sm lg:text-base">About</a>
+            <Link to="/contact" className="text-[#0B2E5C] hover:text-green-500 text-sm lg:text-base">Contact</Link>
           </div>
 
           <button
@@ -53,15 +54,15 @@ export default function Navbar() {
       {mobileMenuIsOpen && (
         <div className="md:hidden bg-slate-900/95 backdrop-blur-lg border-t border-slate-800">
           <div className="px-4 py-4 sm:py-6 space-y-3 sm:space-y-4">
-            <a href="#features" onClick={() => setMobilemenuisOpen(false)} className="block text-gray-300 hover:text-white text-sm lg:text-base">
+            <a href="/#features" onClick={() => setMobilemenuisOpen(false)} className="block text-gray-300 hover:text-white text-sm lg:text-base">
               Services
             </a>
-            <a href="#pricing" onClick={() => setMobilemenuisOpen(false)} className="block text-gray-300 hover:text-white text-sm lg:text-base">
+            <a href="/About-us" onClick={() => setMobilemenuisOpen(false)} className="block text-gray-300 hover:text-white text-sm lg:text-base">
               About
             </a>
-            <a href="#testimonials" onClick={() => setMobilemenuisOpen(false)} className="block text-gray-300 hover:text-white text-sm lg:text-base">
+            <Link to="/contact" onClick={() => setMobilemenuisOpen(false)} className="block text-gray-300 hover:text-white text-sm lg:text-base">
               Contact
-            </a>
+            </Link>
           </div>
         </div>
       )}
