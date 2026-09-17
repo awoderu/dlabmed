@@ -72,7 +72,7 @@ export default function AboutUs() {
             </div>
             {/* Team members can be added here */}
            
-            <Team />
+            {/* <Team /> */}
           
           </section>
 
