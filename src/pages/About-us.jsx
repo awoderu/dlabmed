@@ -1,13 +1,18 @@
 import React from "react";
 import { ShieldCheck, Activity, CheckCircle2 } from "lucide-react";
+import Team from "../components/team";
+import Balls from "../components/balls";
 
 export default function AboutUs() {
   return (
+    <>
+    
     <div className="min-h-[calc(100vh-80px)] pt-24 sm:pt-28 pb-20 sm:pb-28 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
-      <section className="py-8 sm:py-12">
+      <section className="py-6 sm:py-1">
+       
         <div className="text-center lg:text-left mb-8 sm:mb-12">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight">
-            <span className="bg-gradient-to-r from-[#0B2E5C] via-green-700 to-[#2E8B3D] bg-clip-text text-transparent">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight ">
+            <span className="bg-gradient-to-r from-[#0B2E5C] via-green-700 to-[#2E8B3D] bg-clip-text text-transparent text-align-center justify-center">
               About DLAB Medicare
             </span>
           </h1>
@@ -48,6 +53,7 @@ export default function AboutUs() {
         </div>
       </section>
 
+             
 
 
       {/* Our Team */}
@@ -63,11 +69,12 @@ export default function AboutUs() {
               </p>
             </div>
             {/* Team members can be added here */}
-            
-
-
+           
+            <Team />
+          
           </section>
 
     </div>
+    </>
   );
 }

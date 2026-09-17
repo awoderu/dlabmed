@@ -15,7 +15,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-16 sm:pt-20 xl:pt-60 pb-8 sm:pb-12">
+    <section className="relative flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-19 lg:pt-20 sm:pt-20 xl:pt-25 pb-8 sm:pb-12">
       <div
         className="absolute inset-0 opacity-30"
         style={{

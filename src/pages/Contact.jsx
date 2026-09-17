@@ -1,20 +1,14 @@
 import React from "react";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import Balls from "../components/balls";
 
 export default function Contact() {
   return (
-    <div className="min-h-[calc(100vh-80px)] pt-24 sm:pt-28 pb-20 sm:pb-28 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
-        <div className="background">
-            {/* <!-- Using common classes to minimize redundancy --> */}
-            <span className="ball"></span>
-            <span className="ball"></span>
-            <span className="ball"></span>
-            <span className="ball"></span>
-            <span className="ball"></span>
-            <span className="ball"></span>
-          </div>
-      <section className="py-8 sm:py-12">
-        <div className="text-center lg:text-left mb-8 sm:mb-12">
+    <div className="min-h-[calc(100vh-80px)] lg:pt-1 xl:pt-0 xl:mt-0 pb-20 lg:pb-28 sm:pb-28 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+        <Balls />
+        {/* min-h-[calc(100vh-80px)] lg:pt-10 xl:pt-0 xl:mt-0 pb-20 lg:pb-28 sm:pb-28 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto */}
+      <section className="xl:pt-0 pb-8 sm:pb-12">
+        <div className="text-center lg:text-left mb-6 sm:mb-8">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight">
             <span className="bg-gradient-to-r from-[#0B2E5C] via-green-700 to-[#2E8B3D] bg-clip-text text-transparent">
               Contact Us

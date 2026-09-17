@@ -1,4 +1,5 @@
 import { CodeXml, ExternalLink, Mail, MessageCircle } from "lucide-react";
+import dlab_logo from "../assets/dlab_logo.png";
 
 const footerLinks = {
   Product: ["Features", "Pricing", "Security", "Roadmap", "Changelog"],
@@ -23,19 +24,22 @@ export default function Footer() {
             <div className="flex items-center justify-center sm:justify-start space-x-2 mb-3 sm:mb-4">
               <div className="rounded-lg">
                 <img
-                  src="/logo.png"
-                  alt="CodeFlow Logo"
+                  src={dlab_logo}
+                  alt="DLAB Medicare Logo"
                   className="w-6 h-6 sm:w-8 sm:h-8"
                 />
               </div>
               <span className="text-lg sm:text-xl font-bold">
-                <span className="text-white">Code</span>
-                <span className="text-blue-400">Flow</span>
+                <span className="text-[#0B2E5C] font-extrabold">DLAB</span>
+                <span className="text-green-700">MEDICARE</span>
+                <span className="block text-[10px] text-left leading-none text-gray-400">
+                Services limited
+                </span>
               </span>
             </div>
             <p className="text-gray-400 mb-4 sm:mb-6 max-w-xs mx-auto sm:mx-0 text-sm sm:text-base">
-              Transform your workflow with AI-powered tools and automation.
-              Built for modern teams.
+               DLAB Medicare runs accurate, timely diagnostic testing across
+                haematology, chemistry, microbiology and more
             </p>
             <div className="flex justify-center sm:justify-start space-x-3 sm:space-x-4">
               <a
@@ -94,7 +98,7 @@ export default function Footer() {
         <div className="pt-6 sm:pt-8 border-t-0 sm:border-t border-slate-800">
           <div className="flex flex-col sm:flex-row justify-between items-center space-y-3 sm:space-y-0">
             <p className="text-gray-400 text-xs sm:text-sm">
-              © 2025 CodeFlow. All rights reserved.
+              © 2026 DLAB Medicare. All rights reserved.
             </p>
             <div className="flex items-center space-x-4 sm:space-x-6 text-xs sm:text-sm">
               <a
