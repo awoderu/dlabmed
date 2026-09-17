@@ -57,7 +57,7 @@ export default function Navbar() {
             <a href="/" onClick={() => setMobilemenuisOpen(false)} className="block text-gray-300 hover:text-white text-sm lg:text-base">
               Home
             </a>
-            <a href="/About-us" onClick={() => setMobilemenuisOpen(false)} className="block text-gray-300 hover:text-white text-sm lg:text-base">
+            <a href="/aboutus" onClick={() => setMobilemenuisOpen(false)} className="block text-gray-300 hover:text-white text-sm lg:text-base">
               About
             </a>
             <Link to="/contact" onClick={() => setMobilemenuisOpen(false)} className="block text-gray-300 hover:text-white text-sm lg:text-base">
