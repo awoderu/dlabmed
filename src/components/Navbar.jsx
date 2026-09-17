@@ -35,8 +35,8 @@ export default function Navbar() {
           </Link>
 
           <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
-            <a href="/" className="text-[#0B2E5C] hover:text-green-500 text-sm lg:text-base">Services</a>
-            <a href="/About-us" className="text-[#0B2E5C] hover:text-green-500 text-sm lg:text-base">About</a>
+            <a href="/" className="text-[#0B2E5C] hover:text-green-500 text-sm lg:text-base">Home</a>
+            <a href="/aboutus" className="text-[#0B2E5C] hover:text-green-500 text-sm lg:text-base">About</a>
             <Link to="/contact" className="text-[#0B2E5C] hover:text-green-500 text-sm lg:text-base">Contact</Link>
           </div>
 
@@ -55,7 +55,7 @@ export default function Navbar() {
         <div className="md:hidden bg-slate-900/95 backdrop-blur-lg border-t border-slate-800">
           <div className="px-4 py-4 sm:py-6 space-y-3 sm:space-y-4">
             <a href="/" onClick={() => setMobilemenuisOpen(false)} className="block text-gray-300 hover:text-white text-sm lg:text-base">
-              Services
+              Home
             </a>
             <a href="/About-us" onClick={() => setMobilemenuisOpen(false)} className="block text-gray-300 hover:text-white text-sm lg:text-base">
               About
