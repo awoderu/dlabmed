@@ -5,7 +5,7 @@ import Team from "../components/team";
 
 export default function AboutUs() {
   return (
-    <>
+    
     
     <div className="min-h-[calc(100vh-80px)] pt-24 sm:pt-28 pb-20 sm:pb-28 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
       <section className="py-6 sm:py-1">
@@ -72,11 +72,11 @@ export default function AboutUs() {
             </div>
             {/* Team members can be added here */}
            
-            <Team />
+            {/* <Team /> */}
           
           </section>
 
     </div>
-    </>
+    
   );
 }
