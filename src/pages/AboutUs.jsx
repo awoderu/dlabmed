@@ -1,7 +1,7 @@
 import React from "react";
 import { ShieldCheck, Activity, CheckCircle2 } from "lucide-react";
 import Team from "../components/team";
-import Balls from "../components/balls";
+
 
 export default function AboutUs() {
   return (
@@ -17,7 +17,9 @@ export default function AboutUs() {
             </span>
           </h1>
           <p className="mt-4 text-sm sm:text-base text-gray-600 max-w-2xl leading-relaxed">
-            DLAB Medicare Services Limited is a diagnostic laboratory in Owode Apata, Ibadan, built around one idea: results should be accurate, timely, and something both patients and clinicians can rely on without a second thought.
+            DLAB Medicare Services Limited is a diagnostic laboratory in Owode Apata, Ibadan, 
+            built around one idea: results should be accurate, timely, and something both patients 
+            and clinicians can rely on without a second thought.
           </p>
         </div>
 

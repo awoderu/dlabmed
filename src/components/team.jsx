@@ -1,5 +1,6 @@
 import React from 'react'
-import Balls from './balls'
+import manlab from '../assets/manlab.jpg';
+
 
 const Team = () => {
   return (
@@ -11,7 +12,7 @@ const Team = () => {
             {/* Team members will go here */}
             <article className="w-85 h-85 lg:h-65 sm:w-72 lg:w-60 flex flex-col p-4 h-65 border border-gray-200 rounded-lg hover:bg-white/10 hover:border-green-500">
                 <div className='filter saturate-0 hover:saturate-100 transition duration-300 '>
-                    <img src="./src/assets/manlab.jpg" alt="Team member" className="" />
+                    <img src={manlab} alt="Team member" className="" />
                 </div>
                 <div className='text-black text-center mt-8 sm:mt-8 lg:mt-8'>
                 <h3 className="team__name">John Doe</h3>
@@ -20,65 +21,65 @@ const Team = () => {
             </article>
            <article className="w-85 h-85 lg:h-65 sm:w-72 lg:w-60 flex flex-col p-4 h-65 border border-gray-200 rounded-lg hover:bg-white/10 hover:border-green-500">
                 <div className='filter saturate-0 hover:saturate-100 transition duration-300 '>
-                    <img src="./src/assets/manlab.jpg" alt="Team member" className="" />
+                    <img src={manlab} alt="Team member" className="" />
                 </div>
                 <div className='text-black text-center mt-8 sm:mt-8 lg:mt-8'>
-                <h3 className="team__name">John Doe</h3>
-                <p className="team__role">Developer</p>
+                <h3 className="font-semibold text-lg">John Doe</h3>
+                <p className="text-gray-600">Developer</p>
                 </div>
             </article>
             <article className="w-85 h-85 lg:h-65 sm:w-72 lg:w-60 flex flex-col p-4 h-65 border border-gray-200 rounded-lg hover:bg-white/10 hover:border-green-500">
                 <div className='filter saturate-0 hover:saturate-100 transition duration-300 '>
-                    <img src="./src/assets/manlab.jpg" alt="Team member" className="" />
+                    <img src={manlab} alt="Team member" className="" />
                 </div>
                 <div className='text-black text-center mt-8 sm:mt-8 lg:mt-8'>
-                <h3 className="team__name">John Doe</h3>
-                <p className="team__role">Developer</p>
+                <h3 className="font-semibold text-lg">John Doe</h3>
+                <p className="text-gray-600">Developer</p>
                 </div>
             </article>
             <article className="w-85 h-85 lg:h-65 sm:w-72 lg:w-60 flex flex-col p-4 h-65 border border-gray-200 rounded-lg hover:bg-white/10 hover:border-green-500">
                 <div className='filter saturate-0 hover:saturate-100 transition duration-300 '>
-                    <img src="./src/assets/manlab.jpg" alt="Team member" className="" />
+                    <img src={manlab} alt="Team member" className="" />
                 </div>
                 <div className='text-black text-center mt-8 sm:mt-8 lg:mt-8'>
-                <h3 className="team__name">John Doe</h3>
-                <p className="team__role">Developer</p>
+                <h3 className="font-semibold text-lg">John Doe</h3>
+                <p className="text-gray-600">Developer</p>
                 </div>
             </article>
             <article className="w-85 h-85 lg:h-65 sm:w-72 lg:w-60 flex flex-col p-4 h-65 border border-gray-200 rounded-lg hover:bg-white/10 hover:border-green-500">
                 <div className='filter saturate-0 hover:saturate-100 transition duration-300 '>
-                    <img src="./src/assets/manlab.jpg" alt="Team member" className="" />
+                    <img src={manlab} alt="Team member" className="" />
                 </div>
                 <div className='text-black text-center mt-8 sm:mt-8 lg:mt-8'>
-                <h3 className="team__name">John Doe</h3>
-                <p className="team__role">Developer</p>
+                <h3 className="font-semibold text-lg">John Doe</h3>
+                <p className="text-gray-600">Developer</p>
                 </div>
             </article>
             <article className="w-85 h-85 lg:h-65 sm:w-72 lg:w-60 flex flex-col p-4 h-65 border border-gray-200 rounded-lg hover:bg-white/10  hover:border-green-500">
                 <div className='filter saturate-0 hover:saturate-100 transition duration-300 '>
-                    <img src="./src/assets/manlab.jpg" alt="Team member" className="" />
+                    <img src={manlab} alt="Team member" className="" />
                 </div>
                 <div className='text-black text-center mt-8 sm:mt-8 lg:mt-8'>
-                <h3 className="team__name">John Doe</h3>
-                <p className="team__role">Developer</p>
+                <h3 className="font-semibold text-lg">John Doe</h3>
+                <p className="text-gray-600">Developer</p>
                 </div>
             </article>
             <article className="w-85 h-85 lg:h-65 sm:w-72 lg:w-60 flex flex-col p-4 h-65 border border-gray-200 rounded-lg hover:bg-white/10 hover:border-green-500">
                 <div className='filter saturate-0 hover:saturate-100 transition duration-300 '>
-                    <img src="./src/assets/manlab.jpg" alt="Team member" className="" />
+                    <img src={manlab} alt="Team member" className="" />
                 </div>
                 <div className='text-black text-center mt-8 sm:mt-8 lg:mt-8'>
-                <h3 className="team__name">John Doe</h3>
-                <p className="team__role">Developer</p>
+                <h3 className="font-semibold text-lg">John Doe</h3>
+                <p className="text-gray-600">Developer</p>
                 </div>
             </article>
             <article className="w-85 h-85 lg:h-65 sm:w-72 lg:w-60 flex flex-col p-4 h-65 border border-gray-200 rounded-lg hover:bg-white/10 hover:border-green-500">
                 <div className='filter saturate-0 hover:saturate-100 transition duration-300 '>
-                    <img src="./src/assets/manlab.jpg" alt="Team member" className="" />
+                    <img src={manlab} alt="Team member" className="" />
                 </div>
                 <div className='text-black text-center mt-8 sm:mt-8 lg:mt-8'>
-                <h3 className="team__name">John Doe</h3>
-                <p className="team__role">Developer</p>
+                <h3 className="font-semibold text-lg">John Doe</h3>
+                <p className="text-gray-600">Developer</p>
                 </div>
             </article>
         </div>
