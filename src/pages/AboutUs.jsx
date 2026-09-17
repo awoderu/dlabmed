@@ -1,6 +1,6 @@
 import React from "react";
 import { ShieldCheck, Activity, CheckCircle2 } from "lucide-react";
-// import Team from "../components/team";
+import Team from "../components/team";
 
 
 export default function AboutUs() {
@@ -72,7 +72,7 @@ export default function AboutUs() {
             </div>
             {/* Team members can be added here */}
            
-            {/* <Team /> */}
+            <Team />
           
           </section>
 
