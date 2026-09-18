@@ -14,6 +14,8 @@ export default function Hero() {
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
 
+  const [isVisible, setIsVisible] = useState(false);
+
   return (
     <section className="relative flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-19 lg:pt-20 sm:pt-20 xl:pt-25 pb-8 sm:pb-12">
       <div
@@ -54,17 +56,22 @@ export default function Hero() {
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4">
-              <button className="group w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-[#2E8B3D] text-white backdrop-blur-sm border-4 border-green-500 shadow-[0_0_15px_rgba(34,197,94,0.6)] rounded-full font-semibold text-sm sm:text-base transition-all duration-300 hover:bg-white hover:text-blue-950 hover:scale-[1.02] active:bg-white active:text-blue-950 active:scale-[1.02] focus-visible:scale-[1.02] flex items-center justify-center space-x-2">
+              <a href="/form"><button className="group w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-[#2E8B3D] text-white backdrop-blur-sm border-4 border-green-500 shadow-[0_0_15px_rgba(34,197,94,0.6)] rounded-full font-semibold text-sm sm:text-base transition-all duration-300 hover:bg-white hover:text-blue-950 hover:scale-[1.02] active:bg-white active:text-blue-950 active:scale-[1.02] focus-visible:scale-[1.02] flex items-center justify-center space-x-2">
                 <div className="flex items-center space-x-2">
                   <Calendar  className="w-4 h-4 sm:w-5 sm:h-5" />
                   <span>Book a test</span>
                 </div>
                 <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-3 group-hover:translate-x-1 group-active:translate-x-1 transition-transform duration-300" />
-              </button>
+              </button></a>
 
-              <button className="group w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-blue-950 text-white backdrop-blur-sm border-4 border-green-500 shadow-[0_0_15px_rgba(34,197,94,0.6)] rounded-full font-semibold text-sm sm:text-base transition-all duration-300 hover:bg-white hover:text-black hover:scale-[1.02] active:bg-white active:text-black active:scale-[1.02] focus-visible:scale-[1.02] flex items-center justify-center space-x-2">                  <Phone className="w-4 h-4 fill-white" />
+              <a href="tel:08040586725"><button  className="group w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-blue-950 text-white
+               backdrop-blur-sm border-4 border-green-500 shadow-[0_0_15px_rgba(34,197,94,0.6)] 
+               rounded-full font-semibold text-sm sm:text-base transition-all duration-300 hover:bg-white
+                hover:text-black hover:scale-[1.02] active:bg-white active:text-black active:scale-[1.02]
+                 focus-visible:scale-[1.02] flex items-center justify-center space-x-2">                 
+                  <Phone className="w-4 h-4 fill-white" />
                 <span>Call 08040586725</span>
-              </button>
+              </button></a>
             </div>
           </div>
 
